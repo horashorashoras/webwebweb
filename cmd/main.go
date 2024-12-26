@@ -12,7 +12,7 @@ func main() {
 	http.Handle("/", fs)
 
 	port := getEnv("PORT", ":8080")
-	fmt.Println("> server is running on http://localhost", port)
+	fmt.Println("> server is running on http://localhost" + port)
 	if err := http.ListenAndServe(port, nil); err != nil {
 		panic(err)
 	}
