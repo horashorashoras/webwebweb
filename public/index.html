@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <link rel="stylesheet" href="./style.css"></script>
+</head>
+<body>
+    <p>soon ...</p>
+    <script src="./hydra-synth.js"></script>
+    <script>
+        const canvas = document.createElement('canvas')
+
+        canvas.width  = window.innerWidth  - 22
+        canvas.height = window.innerHeight - 66
+
+        document.body.appendChild(canvas)
+
+        const hydra = new Hydra({
+            detectAudio: false, 
+            canvas: canvas,
+        })
+
+        osc(4, 0.13, 10).out()
+    </script>
+</body>
+</html>
