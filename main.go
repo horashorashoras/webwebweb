@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	dir := getEnv("PUBLIC_DIR", "public")
+	dir := getEnv("PUBLIC_DIR", ".")
 	fs := http.FileServer(http.Dir(dir))
 	http.Handle("/", fs)
 
