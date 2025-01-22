@@ -1,4 +1,4 @@
-### webwebweb
+### website
 
 Run server with `$ make run`. 
 
